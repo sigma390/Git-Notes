@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import AppBar from './Components/Appbar'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className='bg-slate-700'>
-     <h1 className="text-red-500">Hellow its Git notes</h1>
-    </div>
+    <div style={{ backgroundColor: 'black', minHeight: '100vh' }}>
+            {/* Your application content goes here */}
+            <AppBar image='/src/assets/Solo.jpeg' alt='logo'/>
+
+
+        </div>
   )
 }
 
