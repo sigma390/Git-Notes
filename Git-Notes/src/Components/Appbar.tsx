@@ -10,7 +10,7 @@ type AppBarProps = {
 
 const AppBar: React.FC<AppBarProps> = ({ image, alt }) => {
     return (
-      <div className="flex justify-between items-center px-4 py-2 bg-purple-600 shadow-lg shadow-purple-500 h-24">
+      <div className="flex justify-between items-center  px-4 py-2 bg-[#B91C1C] shadow-lg shadow-[#B91C1C] h-24">
         <img
           src={image}
           alt={alt}
