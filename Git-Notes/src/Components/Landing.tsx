@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigate} from "react-router-dom";
 
 interface DepartmentCardProps {
   department: string;
@@ -16,13 +17,16 @@ const DepartmentCard: React.FC<DepartmentCardProps> = ({ department, onClick }) 
 };
 
 const departments: string[] = ['Computer Science', 'Electrical Engineering',
- 'Mechanical Engineering', 'Civil Engineering', 'Chemical Engineering', 
- 'Biomedical Engineering'];
+ 'Mechanical Engineering', 'Civil Engineering', 'EnC Engineering', 
+ 'Aeronautical Engineering'];
 
 const Landing: React.FC = () => {
-  const handleDepartmentClick = (department: string) => {
+  const navigate= useNavigate();
+  const handleDepartmentClick = () => {
     // Handle department click event
-    console.log(`Selected department: ${department}`);
+    
+  // Navigate to '/Semester' with the selected department as a parameter
+  navigate(`/Semester/`);
   };
 
   return (
