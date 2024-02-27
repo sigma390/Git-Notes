@@ -1,17 +1,31 @@
 
+import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import './App.css'
 import AppBar from './Components/Appbar'
 import Landing from './Components/Landing'
+import Semesters from './Components/Semesters';
 
 
 function App() {
 
 
   return (
-    <div style={{ backgroundColor: 'black', minHeight: '100vh' }}>
-            {/* Your application content goes here */}
+    <div style={{ backgroundColor: 
+    'black', minHeight: '100vh' }}>
+      <Router>
             <AppBar image='/src/assets/Solo.jpeg' alt='logo'/>
-            <Landing />
+            <Routes>
+            <Route path={'/'} element={<Landing/>} />
+            <Route path={'/Semester/'} element={<Semesters/>} />
+
+            </Routes>
+            
+
+
+        
+      </Router>
+            
+            
 
 
         </div>
