@@ -20,13 +20,13 @@ const departments: string[] = ['Computer Science', 'Electrical Engineering',
  'Mechanical Engineering', 'Civil Engineering', 'EnC Engineering', 
  'Aeronautical Engineering'];
 
-const Landing: React.FC = () => {
+const Landing: React.FC<DepartmentCardProps> = ({department}:DepartmentCardProps) => {
   const navigate= useNavigate();
   const handleDepartmentClick = () => {
     // Handle department click event
     
   // Navigate to '/Semester' with the selected department as a parameter
-  navigate(`/Semester/`);
+  navigate(`/Semester/${department}`);
   };
 
   return (

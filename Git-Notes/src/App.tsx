@@ -15,7 +15,7 @@ function App() {
       <Router>
             <AppBar image='/src/assets/Solo.jpeg' alt='logo'/>
             <Routes>
-            <Route path={'/'} element={<Landing/>} />
+            <Route path={'/'} element={<Landing />} />
             <Route path={'/Semester/'} element={<Semesters/>} />
 
             </Routes>
